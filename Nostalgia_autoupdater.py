@@ -4,6 +4,10 @@ import json
 from time import sleep
 import subprocess
 import requests
+import sys
+
+UPDATER_PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
+os.chdir(UPDATER_PATH)
 
 NOSTALGIA_PATH = os.path.abspath('../NostalgiaForInfinity')
 FT_USERDATA_PATH = os.path.abspath('../ft_userdata')
